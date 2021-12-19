@@ -9,57 +9,70 @@
 </head>
 <body>
    
-    <div class="navbar">
-        <div class="container">
-            <a class="logo" href="#"><span>17 Barber</span> Shop</a>
-        </div>   
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a class="navbar-brand" href="#logo-icon">
+                <div class="logo-image">
+                      <img src="./images/Logo.png" class="img-fluid">
+                </div>
+          </a>
+          <a href="#logo-text" id="navbar__logotext">Barber Shop</a>
+
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="#home" class="navbar__links" id="home-page">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about" class="navbar__links" id="about-page">About</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#services" class="navbar__links" id="services-page"
+                >Services</a
+              >
+            </li>
+            <li class="navbar__btn">
+              <a href="#make-appointment" class="button" id="appointment">Appointment</a>
+            </li>
+          </ul>
         </div>
+      </nav>
 
         
-        <div class="animated">
+        <!-- <div class="animated">
             <div class="line">Look Your Best</div>
             <div class="line">Got a Job Interview?</div>
             <div class="line">Got a Date?</div>
             <div class="line">Feel Your Best</div>
-                </div>
+                </div> -->
 
 
             <section class="hero">
 
                 <div class="container">
-                    
-                    <div class="left-col">
-                        
-
-                        <h1>Get a Haircut</h1>
-                        
-
-                        <div class="hero-cta">
-                            <a href="#" class="primary-cta">Schedule Appointment</a>
-                            
-                    
-
-                            
-                            <p class="subsubhead">Walk-Ins Welcome</p>
-                            <a href="#" class="secondary-cta">Directions</a>
-                            
-        
-
-                        </div>
-
-                    </div>
-
-              
+                    <h1>17 Barber Shop</h1>
+   
                 </div>
             </section>
 
 
-            <!-- <section class="shopshot-section">
-            <div class="container">    
-                <img src="./images/shot7.jpg" class="shopphoto" alt="an image of the shop" width="800" 
-                height="600" >
+            <section class="cta-section">
+
+            <div class="container">   
+
+              <div class="cta-buttons">
+              <a href="#" class="direction-cta">Directions</a>
+
+              <p class="cta-space"></p>
+
+              <a href="#" class="appointment-cta">Make an Appointment</a> 
             </div>
-        </section> -->
+                
+            </div>
+        </section>
         
 
             <section class="features-section">
@@ -83,7 +96,8 @@
 
      
 
-    <scripts src="./scripts/script.js"></scripts>
+    <script src="./scripts/script.js"></script>
+    
     
 </body>
 </html>
