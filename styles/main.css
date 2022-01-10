@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 
 :root {
   --primary-color:#0C1110;
+  --wood: #221212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-color);
 }
 
 * {
@@ -103,15 +111,16 @@
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  color: #fff;
+  background: white;
+  background: -webkit-linear-gradient(to right, #016AB6, white, #C11E2F);
+  background: linear-gradient(to right, #C11E2F, white, #016AB6);
+  color: black;
   transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 .navbar__links:hover {
-  color: #9518fc;
+  color: #6A767C;
   transition: all 0.3s ease;
 }
 
@@ -141,12 +150,13 @@
   }
 
   .navbar__menu.active {
-    background: #131313;
+    
+    background: var(--primary-color);
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 60vh;
+    height: 91vh;
     font-size: 1.6rem;
   }
 
@@ -216,20 +226,6 @@
 
 /* Navbar stuff END */
 
-
-
-body {
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  font-family: 'Heebo', sans-serif;
- 
-}
-
-a {
-  color: grey;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -238,25 +234,28 @@ ul {
 
 section {
   padding: 3em 2em;
-  
 }
 
 .hero {
   text-align: center;
-  background: url("../images/shot1.jpg");
+  background: url("../images/shot11.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: var(--primary-color);
   filter: brightness(100%);
-  height: 61vh;
+  height: 52.85vh;
 }
 
 .hero h1 {
-  font-size: 2.5em;
+  font-size: 2.8em;
   color: white;
-  opacity: .9;
-  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+  opacity: 1;
+  text-shadow: var(--primary-color) 1px 1px,var(--primary-color) -0px 0px,var(--primary-color) -1px 1px,var(--primary-color) -2px 2px,var(--primary-color) -3px 3px,var(--primary-color) -4px 4px,var(--primary-color) -5px 5px,var(--primary-color) -6px 6px,var(--primary-color) -7px 7px,var(--primary-color) -8px 8px,var(--primary-color) -9px 9px;
+  font-family: 'Lobster', cursive;
+  padding-top: 2.1em;
 }
+
+
 
 
 /* Animated Lines START */
@@ -302,59 +301,61 @@ section {
 /* CTA section START */
 
 .cta-section {
-  text-align: center;
+  justify-content: space-between;
+  text-align  : center;
   background-color: var(--primary-color);
-  padding: 5.2em;
+
 }
 
 .direction-cta {
-  background: #221212;
+  font-size: 1.3em;
+  background: var(--wood);
   color: white;
   text-decoration: none;
-  padding: .6em 1.3em;
+  padding: .4em 3.62em;
   border-radius: .7em;
-  
+  display: inline-block;
+  margin-bottom: 1.9em;
 }
 
 .direction-cta:hover {
   font-weight: bold;
-  background: #d30b0b;
+  opacity: 0.8;
 }
 
 .appointment-cta {
-  background: #221212;
+  font-size: 1.3em;
+  background: var(--wood);
   color: white;
   text-decoration: none;
-  padding: .5em 4.15em;
+  padding: .45em 2.84em;
   border-radius: .7em;
+  display: inline-block;
 }
 
 .appointment-cta:hover {
   font-weight: bold;
-  background: #d30b0b;
+  opacity: 0.8;
+
 }
 /* CTA section END */
 
 .features-section {
-  
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../images/clippers.jpg");
   background-position: cover;
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
+  padding: 2.3em;
       
 }
 
 .features-section li {
   color: white;
-  font-size: 1.1em;
+  font-size: 1em;
   margin-bottom: .2em;
   filter: none;
   opacity: 1;
-}
-ul.features-section li:before {
-  content: '';
-  left: -2em;
 }
 
 .map-section {
@@ -368,6 +369,48 @@ iframe {
   background-color: var(--primary-color);
 }
 
+.app-frame {
+  width: 100%;
+  padding: 0em;
+  margin: 0em;
+}
+/* about page start */
+
+.about {
+  font-size: 1.7em;
+  color: white;
+  opacity: 1;
+  text-shadow: var(--primary-color) 1px 1px,var(--primary-color) -0px 0px,var(--primary-color) -1px 1px,var(--primary-color) -2px 2px,var(--primary-color) -3px 3px,var(--primary-color) -4px 4px,var(--primary-color) -5px 5px,var(--primary-color) -6px 6px,var(--primary-color) -7px 7px,var(--primary-color) -8px 8px,var(--primary-color) -9px 9px;
+  font-family: 'Lobster', cursive;
+  padding-top: 1.3em;
+  margin-bottom: 0em;
+  padding-bottom: 1.3em;
+  
+}
+
+.about p{
+  padding: .3em;
+
+  margin-top: 1em;
+  font-size: .75em;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0em;
+  padding-bottom: 0em;
+}
+
+/* about page end */
+
+/* services page start */
+
+.services {
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+/* services page end */
 
 @media (hover: hover) and (pointer: fine) {
   button:hover {
