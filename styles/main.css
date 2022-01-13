@@ -410,14 +410,6 @@ iframe {
 
 /* services page end */
 
-/* appointment page start */
-
-.app-embed {
-  margin: 0;
-  padding-top: 0;
-}
-
-/* appointment page end  */
 
 @media (hover: hover) and (pointer: fine) {
   button:hover {
@@ -435,7 +427,7 @@ iframe {
   display: none;
 }
 
-.desk-hero {
+#desk-hero {
   display: none;
 }
 
@@ -463,26 +455,28 @@ iframe {
   display: none;
   }
 
-  .desk-hero {
+  #desk-hero {
     display: flex;
-    font-size: 2em;
-    margin: 4rem 18rem 1rem 9rem;
+    flex-direction: column;
+    font-size: 2.8em;
     padding: 0;
+    text-align: left;
 
   }
 
-  .desk-hero h2 {
+  #desk-hero h2 {
     line-height: 20%;
+    margin-bottom: 1rem;
   }
 
   .cta-section {
     padding: 0;
-    margin: 0;
+    margin: 6rem 0em 2rem 5em;
   }
 
   .cta-buttons { 
-    padding-top: .8rem;
-    margin: 0rem 37rem 1rem 1.9rem;
+   padding: 1.2em 0em 0em .1em;
+   text-align: left;
   }
 
   .direction-cta {
@@ -564,6 +558,18 @@ iframe {
 
   #services-go {
     display: flex;
+  }
+
+  .services h1 {
+    padding-bottom: 1em;
+  }
+
+  .price-list-item {
+    padding: .4em 1em 0em 1em;
+  }
+
+  .about h1 {
+    padding-bottom: 1em;
   }
 
 }
