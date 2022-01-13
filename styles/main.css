@@ -472,7 +472,12 @@ iframe {
 
   }
 
+  #desk-hero h1 {
+    display: flex;
+  }
+
   #desk-hero h2 {
+    display: flex;
     line-height: 20%;
     margin-bottom: 1rem;
   }
