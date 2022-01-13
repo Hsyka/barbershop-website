@@ -9,20 +9,29 @@
   --wood: #221212;
   display: flex;
   justify-content: center;
-  align-items: center;
   font-family: 'Poppins', sans-serif;
   background-color: var(--primary-color);
+  scroll-behavior: smooth;
+  
 }
 
 * {
-  
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
-  
- 
 }
+
+body {
+  hyphens: manual;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
 
 /* Navbar BEGIN */
 
@@ -44,37 +53,33 @@
   height: 80px;
   z-index: 1;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 10px;
+
 }
 
 .logo-image img{
   width: 20px;
   height: 60px;
-  overflow: hidden;
-  margin: 10px 0px 0px 23px;
+  padding: 10px 0px 0px 23px;
 }
 
 #navbar__logotext {
-
-  background-image: linear-gradient(to top, #c7c7c7 0%, #d62424 90%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  font-family: 'Lobster', cursive;
+  color: black;
   display: none;
-  align-items: center;
   cursor: pointer;
   text-decoration: none;
   font-size: 2.35rem;
-  padding-left: 0px;
+ 
 }
 
 .navbar__menu {
   display: flex;
-  align-items: center;
+  justify-content: center;
   list-style: none;
+ 
 }
 
 .navbar__item {
@@ -89,7 +94,7 @@
   width: 125px;
   text-decoration: none;
   height: 100%;
-  transition: all 0.3s ease;
+  transition: all .5s ease;
 }
 
 .navbar__btn {
@@ -105,8 +110,8 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 10px 20px;
-  height: 100%;
+  padding: 0px 5px;
+  height: 55%;
   width: 100%;
   border: none;
   outline: none;
@@ -135,6 +140,8 @@
     width: 100%;
     max-width: 1300px;
     padding: 0;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
   }
 
   .navbar__menu {
@@ -150,14 +157,17 @@
   }
 
   .navbar__menu.active {
-    
     background: var(--primary-color);
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 91vh;
+    height: 100vh;
     font-size: 1.6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .navbar__toggle .bar {
@@ -170,17 +180,18 @@
 
   .navbar__item {
     width: 100%;
+    margin-top: 1.5rem;
   }
 
   .navbar__links {
     text-align: center;
-    padding: 2rem;
     width: 100%;
-    display: table;
+  
   }
 
   .navbar__btn {
-    padding-bottom: 2rem;
+    padding: 0;
+    margin-top: 1.5rem;
   }
 
   .button {
@@ -190,6 +201,7 @@
     width: 80%;
     height: 80px;
     margin: 0;
+    padding: 0;
   }
 
   #mobile-menu {
@@ -217,13 +229,6 @@
   }
 }
 
-@media screen and (min-width: 992px) {
-  #navbar__logotext {
-    display: flex;
-  }
-
-}
-
 /* Navbar stuff END */
 
 ul {
@@ -241,9 +246,8 @@ section {
   background: url("../images/shot11.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-color: var(--primary-color);
   filter: brightness(100%);
-  height: 52.85vh;
+  height: 41.2vh;
 }
 
 .hero h1 {
@@ -255,64 +259,23 @@ section {
   padding-top: 2.1em;
 }
 
-
-
-
-/* Animated Lines START */
-/* .animated, .line {
-  width: 100%;
-  height: 90px;
-} 
-
-.animated {
-  position: absolute;
-  top: 17%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  overflow: hidden;
-}
-
-.line {
-  position: relative;
-  bottom: 0%;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1em;
-  font-weight: bold;
+.hero ul {
   color: white;
-  letter-spacing: .3em;
-  text-shadow: 0 0 1px black, 0 0 1px black;
+
 }
-
-.line { animation: slidev linear 14s infinite; }
-
-@keyframes slidev {
- 0% { bottom: 0%; }
- 30% { bottom: 0%; }
- 33% { bottom: 100%; }
- 63% { bottom: 100%; }
- 66% { bottom: 200%; }
- 97% { bottom: 200%; }
- 100% { bottom: 0%; }
-
-} */
-/* Animated Lines END*/
 
 /* CTA section START */
 
 .cta-section {
-  justify-content: space-between;
-  text-align  : center;
-  background-color: var(--primary-color);
-
+  text-align: center;
 }
 
 .direction-cta {
-  font-size: 1.3em;
-  background: var(--wood);
+  font-size: 1.41em;
+  background: linear-gradient(to right, var(--wood), #2c1818, #301818);
   color: white;
   text-decoration: none;
-  padding: .4em 3.62em;
+  padding: .4em 2.74em;
   border-radius: .7em;
   display: inline-block;
   margin-bottom: 1.9em;
@@ -321,11 +284,12 @@ section {
 .direction-cta:hover {
   font-weight: bold;
   opacity: 0.8;
+  transition: all 0.3s ease;
 }
 
 .appointment-cta {
   font-size: 1.3em;
-  background: var(--wood);
+  background: linear-gradient(to right, var(--wood), #2c1818, #301818);
   color: white;
   text-decoration: none;
   padding: .45em 2.84em;
@@ -336,6 +300,7 @@ section {
 .appointment-cta:hover {
   font-weight: bold;
   opacity: 0.8;
+  transition: all 0.3s ease;
 
 }
 /* CTA section END */
@@ -347,6 +312,7 @@ section {
   background-size: 100%;
   margin: 0;
   padding: 2.3em;
+  align-items: center;
       
 }
 
@@ -356,24 +322,22 @@ section {
   margin-bottom: .2em;
   filter: none;
   opacity: 1;
+  list-style: inside;
 }
 
 .map-section {
-  padding: 0em 0em;
+  padding: 0;
+  margin: 0;
 }
 
 iframe {
-  padding: 0.4em 0.3em 0.4em 0.3em;
-  width: 100%;
+  padding: .5em;
+  width: 97%;
   height: 400px;
   background-color: var(--primary-color);
 }
 
-.app-frame {
-  width: 100%;
-  padding: 0em;
-  margin: 0em;
-}
+
 /* about page start */
 
 .about {
@@ -384,13 +348,12 @@ iframe {
   font-family: 'Lobster', cursive;
   padding-top: 1.3em;
   margin-bottom: 0em;
-  padding-bottom: 1.3em;
+  padding-bottom: 1.35em;
   
 }
 
 .about p{
   padding: .3em;
-
   margin-top: 1em;
   font-size: .75em;
   font-family: 'Poppins', sans-serif;
@@ -403,17 +366,183 @@ iframe {
 /* services page start */
 
 .services {
+  margin: 0;
+  padding: 1.55em;
   color: white;
   font-size: 1.2em;
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+ 
+}
 
+.price-list {
+  padding: 0;
+  margin-bottom: 2.8rem;
+  list-style: none; 
+  font-size: 1em;
+  line-height: 1.6em;
+}
 
+.price-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: .5rem;
+}
+
+.price-list-separator {
+  border-bottom-style: dotted;
+  border-bottom-width: 4px;
+  border-bottom-color: rgb(190, 190, 190);
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 /* services page end */
+
+/* appointment page start */
+
+.app-embed {
+  margin: 0;
+  padding-top: 0;
+}
+
+/* appointment page end  */
 
 @media (hover: hover) and (pointer: fine) {
   button:hover {
     color: palegreen;
   }
 }
+
+
+
+
+
+/* Desktop responsive begin */
+
+.desk-gallery {
+  display: none;
+}
+
+.desk-hero {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  #navbar__logotext {
+    display: flex;
+  }
+
+  .logo-container {
+    border-style: solid;
+    flex-direction: right;
+    justify-content: start;
+  }
+
+}
+
+
+
+@media screen and (min-width: 962px) {
+  body {
+    background-color: white;
+  }
+
+  .hero {
+  display: none;
+  }
+
+  .desk-hero {
+    display: flex;
+    font-size: 2em;
+    padding: 2.5em 10em 1em 5em;
+
+  }
+
+  .desk-hero h2 {
+    line-height: 20%;
+  }
+
+  .cta-section {
+    padding: 0;
+  }
+
+  .cta-buttons { 
+    padding: 0em 17em 0 2em;
+  }
+
+  .direction-cta {
+    font-size: 1em;
+    padding: .4em 1.7em;
+    color: white;
+    background: var(--wood);
+
+  }
+  .appointment-cta {
+    font-size: 1em;
+    padding: .4em 1.7em;
+    color: var(--wood);
+    background: white;
+    border: solid;
+    border-color: var(--wood);
+  }
+
+  .features-section {
+    display: none;
+  }
+
+  .desk-gallery {
+    padding: 0;
+    display: flex;
+    flex-direction: left;
+    justify-content: space-between;
+    margin-top: 3em;
+  }
+
+
+  #image-one {
+    width: 12em;
+    height: 100%;
+    border-radius: 4px;
+    margin: 3em 1em 0em .3em;
+  }
+  #image-two {
+    width: 20em;
+    height: 100%;
+    border-radius: 4px;
+    margin: 0em 0em 0em 0em;
+  }
+  #image-three {
+    width: 10em;
+    height: 100%;
+    border-radius: 4px;
+    margin: 9em 1em 0em 1em;
+  }
+  #image-four {
+    width: 10em;
+    height: 100%;
+    border-radius: 4px;
+    margin: 4em .3em 0em 0em;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .map-section {
+    width: 100%;
+    background-color: white;
+    color:white; 
+  }
+
+  .map-section iframe {
+    background-color: white;
+   
+  }
+
+}
+
+
+
+/* desktop responsive end */
