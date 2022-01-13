@@ -293,12 +293,13 @@ ul {
   border-radius: .7em;
   display: inline-block;
   margin-bottom: 1.9em;
+  -webkit-transition: ease-out 1s;
+  -moz-transition: ease-out 1s;
+  transition: ease-out 1s;
 }
 
 .direction-cta:hover {
-  font-weight: bold;
-  opacity: 0.8;
-  transition: all 0.3s ease;
+ 
 }
 
 .appointment-cta {
@@ -309,14 +310,15 @@ ul {
   padding: .45em 2.84em;
   border-radius: .7em;
   display: inline-block;
+  -webkit-transition: ease-out 1s;
+  -moz-transition: ease-out 1s;
+  transition: ease-out 1s;
 }
 
 .appointment-cta:hover {
-  font-weight: bold;
-  opacity: 0.8;
-  transition: all 0.3s ease;
 
 }
+
 /* CTA section END */
 
 .features-section {
@@ -508,11 +510,18 @@ iframe {
 
   .direction-cta {
     font-size: 1.07em;
-    padding: .4em 1.7em;
+    padding: .29em 1.7em;
     color: white;
+    border: solid;
+    border-color: var(--wood);
     background: var(--wood);
-
   }
+
+  .direction-cta:hover {
+    box-shadow: inset 400px 0 0 0 white;
+    color: var(----wood);
+  }
+
   .appointment-cta {
     font-size: 1em;
     padding: .4em 1.7em;
@@ -520,6 +529,11 @@ iframe {
     background: white;
     border: solid;
     border-color: var(--wood);
+  }
+
+  .appointment-cta:hover {
+    box-shadow: inset 400px 0 0 0 var(--wood);
+    color: white;
   }
 
   .features-section {
