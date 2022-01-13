@@ -431,6 +431,14 @@ iframe {
   display: none;
 }
 
+#desk-hero h1 {
+  display: none;
+}
+
+#desk-hero h2 {
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   #navbar__logotext {
     display: flex;
