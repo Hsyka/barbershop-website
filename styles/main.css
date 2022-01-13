@@ -12,6 +12,7 @@
   font-family: 'Poppins', sans-serif;
   background-color: var(--primary-color);
   scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
   
 }
 
@@ -51,7 +52,7 @@ body {
   display: flex;
   justify-content: space-between;
   height: 80px;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
@@ -139,9 +140,8 @@ body {
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    padding: 0;
-    padding-top: .1rem;
-    padding-bottom: .1rem;
+    padding: .1em 0em .1em 0em;
+   
   }
 
   .navbar__menu {
@@ -344,21 +344,29 @@ iframe {
   font-size: 1.7em;
   color: white;
   opacity: 1;
-  text-shadow: var(--primary-color) 1px 1px,var(--primary-color) -0px 0px,var(--primary-color) -1px 1px,var(--primary-color) -2px 2px,var(--primary-color) -3px 3px,var(--primary-color) -4px 4px,var(--primary-color) -5px 5px,var(--primary-color) -6px 6px,var(--primary-color) -7px 7px,var(--primary-color) -8px 8px,var(--primary-color) -9px 9px;
   font-family: 'Lobster', cursive;
-  padding-top: 1.3em;
-  margin-bottom: 0em;
-  padding-bottom: 1.35em;
-  
+  padding: 0em 1.5em 1.5em 1.5em;
+  text-align: center;
+  z-index: 2;
 }
 
 .about p{
-  padding: .3em;
-  margin-top: 1em;
+  padding: .3em .3em 0em .3em;
   font-size: .75em;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 0em;
+  margin-top: .5rem;
   padding-bottom: 0em;
+}
+
+#about-go {
+  z-index:1;
+
+}
+
+#about-p-bottom {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 2.7em;
 }
 
 /* about page end */
@@ -372,7 +380,13 @@ iframe {
   font-size: 1.2em;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
- 
+  margin: 2.7em 0em 2.7em 0em;
+}
+
+.services h1 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
 }
 
 .price-list {
