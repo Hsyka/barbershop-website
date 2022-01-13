@@ -13,14 +13,14 @@
   background-color: var(--primary-color);
   scroll-behavior: smooth;
   scroll-snap-type: x proximity;
-  overflow-y: hidden;
+  overflow-x: hidden;
   
 }
 
 * {
   margin: 0;
   padding: 0;
-  overflow-y: hidden;
+
 
 }
 
@@ -30,7 +30,7 @@ body {
   animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 @keyframes fadeInAnimation {
@@ -266,6 +266,7 @@ ul {
 
 .hero h1 {
   font-size: 2.8em;
+  letter-spacing: -.2em;
   color: white;
   opacity: 1;
   text-shadow: var(--primary-color) 1px 1px,var(--primary-color) -0px 0px,var(--primary-color) -1px 1px,var(--primary-color) -2px 2px,var(--primary-color) -3px 3px,var(--primary-color) -4px 4px,var(--primary-color) -5px 5px,var(--primary-color) -6px 6px,var(--primary-color) -7px 7px,var(--primary-color) -8px 8px,var(--primary-color) -9px 9px;
@@ -274,6 +275,7 @@ ul {
   animation: fadeInAnimationHero ease 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  
 }
 
 @keyframes fadeInAnimationHero {
@@ -533,6 +535,7 @@ iframe {
     border: solid;
     border-color: var(--wood);
     background: var(--wood);
+    outline: none;
   }
 
   .direction-cta:hover {
@@ -547,6 +550,7 @@ iframe {
     background: white;
     border: solid;
     border-color: var(--wood);
+    outline: none;
   }
 
   .appointment-cta:hover {
