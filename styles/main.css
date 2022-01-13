@@ -267,6 +267,18 @@ ul {
   text-shadow: var(--primary-color) 1px 1px,var(--primary-color) -0px 0px,var(--primary-color) -1px 1px,var(--primary-color) -2px 2px,var(--primary-color) -3px 3px,var(--primary-color) -4px 4px,var(--primary-color) -5px 5px,var(--primary-color) -6px 6px,var(--primary-color) -7px 7px,var(--primary-color) -8px 8px,var(--primary-color) -9px 9px;
   font-family: 'Lobster', cursive;
   padding-top: 2.1em;
+  animation: fadeInAnimationHero ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimationHero {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
 
 .hero ul {
