@@ -152,7 +152,7 @@ body {
     position: absolute;
     top: -1000px;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     z-index: -1;
   }
 
@@ -160,7 +160,7 @@ body {
     background: var(--primary-color);
     top: 100%;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     z-index: 99;
     height: 100vh;
     font-size: 1.6rem;
@@ -180,7 +180,7 @@ body {
 
   .navbar__item {
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: .3rem;
   }
 
   .navbar__links {
@@ -261,6 +261,9 @@ section {
 
 .hero ul {
   color: white;
+  font-size: 1.4em;
+    text-shadow: 2px 2px #240c0c;
+  
 
 }
 
@@ -310,7 +313,7 @@ section {
   background-position: cover;
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 0;
+  margin: 2.7em 0em 0em 0em;
   padding: 2.3em;
   align-items: center;
       
@@ -347,7 +350,6 @@ iframe {
   font-family: 'Lobster', cursive;
   padding: 0em 1.5em 1.5em 1.5em;
   text-align: center;
-  z-index: 2;
 }
 
 .about p{
@@ -356,11 +358,6 @@ iframe {
   font-family: 'Poppins', sans-serif;
   margin-top: .5rem;
   padding-bottom: 0em;
-}
-
-#about-go {
-  z-index:1;
-
 }
 
 #about-p-bottom {
@@ -374,7 +371,6 @@ iframe {
 /* services page start */
 
 .services {
-  margin: 0;
   padding: 1.55em;
   color: white;
   font-size: 1.2em;
@@ -470,7 +466,8 @@ iframe {
   .desk-hero {
     display: flex;
     font-size: 2em;
-    padding: 2.5em 10em 1em 5em;
+    margin: 4rem 18rem 1rem 9rem;
+    padding: 0;
 
   }
 
@@ -480,10 +477,12 @@ iframe {
 
   .cta-section {
     padding: 0;
+    margin: 0;
   }
 
   .cta-buttons { 
-    padding: 0em 17em 0 2em;
+    padding-top: .8rem;
+    margin: 0rem 37rem 1rem 1.9rem;
   }
 
   .direction-cta {
@@ -553,6 +552,18 @@ iframe {
   .map-section iframe {
     background-color: white;
    
+  }
+
+  .about {
+    color: black;
+  }
+
+  .services {
+    color: black;
+  }
+
+  #services-go {
+    display: flex;
   }
 
 }
