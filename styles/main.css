@@ -20,6 +20,8 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
+
 }
 
 body {
@@ -28,6 +30,7 @@ body {
   animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  overflow-y: hidden;
 }
 
 @keyframes fadeInAnimation {
