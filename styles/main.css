@@ -12,17 +12,13 @@
   font-family: 'Poppins', sans-serif;
   background-color: var(--primary-color);
   scroll-behavior: smooth;
-  scroll-snap-type: x proximity;
   overflow-x: hidden;
-  
 }
 
 * {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-
-
 }
 
 body {
@@ -31,6 +27,9 @@ body {
   animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
 }
 
 @keyframes fadeInAnimation {
@@ -53,6 +52,8 @@ body {
 /* Navbar BEGIN */
 
 .navbar {
+  overflow-x: hidden;
+  overflow-y: visible;
   background-color: var(--primary-color);
   height: 80px;
   display: flex;
