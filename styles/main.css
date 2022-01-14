@@ -446,6 +446,27 @@ iframe {
 
 /* services page end */
 
+/* hours page start */
+
+.hours-section {
+  display: flex;
+  color: white;
+  margin: 2.7rem 0rem 2.7rem 0rem;
+  list-style: none;
+  justify-content: center;
+}
+
+.hours-section h1 {
+  margin-bottom: .5rem;
+}
+.hours-line {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+
+/* hours page end  */
 
 @media (hover: hover) and (pointer: fine) {
   button:hover {
@@ -543,8 +564,6 @@ iframe {
     border: solid;
     border-color: var(--wood);
     box-shadow: none;
-    
-    
   }
 
   .direction-cta:hover {
@@ -646,6 +665,10 @@ iframe {
 
   .about h1 {
     padding-bottom: 1em;
+  }
+
+  .hours-section {
+    display: none;
   }
 
 }
