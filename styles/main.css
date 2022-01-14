@@ -18,7 +18,6 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 body {
@@ -52,8 +51,6 @@ body {
 /* Navbar BEGIN */
 
 .navbar {
-  overflow-x: hidden;
-  overflow-y: visible;
   background-color: var(--primary-color);
   height: 80px;
   display: flex;
@@ -179,7 +176,7 @@ body {
     top: 100%;
     opacity: 1;
     transition: all 0.3s ease;
-    z-index: 99;
+    z-index: 999;
     height: 100vh;
     font-size: 1.6rem;
     width: 100%;
@@ -204,7 +201,6 @@ body {
   .navbar__links {
     text-align: center;
     width: 100%;
-  
   }
 
   .navbar__btn {
@@ -306,19 +302,19 @@ ul {
 }
 
 .direction-cta {
-  font-size: 1.41em;
+  font-size: 1.35em;
   background: linear-gradient(to right, var(--wood), #2c1818, #301818);
   color: white;
   text-decoration: none;
-  padding: .45em 2.84em;
-  border-radius: .7em;
+  padding: .43em 3em;
+  
   display: inline-block;
   -webkit-transition: ease-out .8s;
   -moz-transition: ease-out .8s;
   transition: ease-out .8s;
   border: 1.5px solid white;
   outline: 4px solid var(--wood);
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .direction-cta:hover {
@@ -331,7 +327,7 @@ ul {
   color: white;
   text-decoration: none;
   padding: .45em 2.84em;
-  border-radius: .7em;
+  
   display: inline-block;
   -webkit-transition: ease-out 1.4s;
   -moz-transition: ease-out 1.4s;
@@ -498,9 +494,9 @@ iframe {
     
   }
 
-* {
-  overflow-x: visible;
-}
+  .navbar__container {
+    overflow-x: visible;
+  }
 
   .hero {
   display: none;
@@ -513,9 +509,6 @@ iframe {
     padding: 0;
     text-align: left;
     overflow-x: visible;
-    
-
-
   }
 
   #desk-hero h1 {
@@ -532,7 +525,7 @@ iframe {
 
   .cta-section {
     padding: 0;
-    margin: 7rem 0em 2rem 7em;
+    margin: 7rem 0em 5rem 7em;
   }
 
   .cta-buttons { 
@@ -543,13 +536,14 @@ iframe {
   .direction-cta {
     outline: none;
     margin-bottom: 0em;
-    font-size: 1.1em;
-    padding: .29em 1.7em;
+    font-size: 1em;
+    padding: .4em 1.65em;
     color: white;
     background: var(--wood);
     border: solid;
     border-color: var(--wood);
     box-shadow: none;
+    
     
   }
 
