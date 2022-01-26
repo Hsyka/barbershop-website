@@ -28,7 +28,7 @@ body {
   animation-fill-mode: forwards;
   overflow-x: hidden;
   overflow-y: scroll;
-  position: relative;
+
 }
 
 @keyframes fadeInAnimation {
@@ -58,6 +58,7 @@ body {
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: 999;
 }
@@ -75,6 +76,7 @@ body {
 }
 
 .logo-image img{
+  display: none;
   width: 20px;
   height: 60px;
   padding: 10px 0px 0px 23px;
@@ -505,6 +507,10 @@ iframe {
     display: flex;
   }
 
+  .logo-image img {
+    display: flex;
+  }
+
 }
 
 
@@ -516,7 +522,7 @@ iframe {
   }
 
   .navbar__container {
-    overflow-x: visible;
+    overflow-x: hidden;
   }
 
   .hero {
