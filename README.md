@@ -1,4 +1,4 @@
-This is a responsive website built with vanilla HTML & CSS.
+This is a responsive website built with HTML & CSS.
 
 Supported viewing:
 
