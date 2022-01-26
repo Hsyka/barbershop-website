@@ -53,7 +53,7 @@ body {
 .navbar {
   background-color: var(--primary-color);
   height: 80px;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
@@ -72,7 +72,6 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 10px;
-
 }
 
 .logo-image img{
@@ -341,7 +340,6 @@ ul {
 .appointment-cta:hover {
 
 }
-
 /* CTA section END */
 
 .features-section {
@@ -358,23 +356,26 @@ ul {
 
 .features-section li {
   color: white;
-  font-size: 1em;
+  font-size: 1.1em;
   margin-bottom: .2em;
   text-align: left;
   filter: none;
-  opacity: 1;
+  opacity: .9;
   list-style: inside;
 }
 
 .map-section {
-  padding: 0;
+  padding: 1em;
   margin: 0;
 }
 
+
 iframe {
-  padding: .5em;
-  width: 97%;
-  height: 400px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 300px;
+  border: 0;
   background-color: var(--primary-color);
 }
 
@@ -396,13 +397,10 @@ iframe {
   font-family: 'Poppins', sans-serif;
   margin-top: .5rem;
   padding-bottom: 0em;
-}
-
-#about-p-bottom {
-  padding: 0;
-  margin-top: 0;
   margin-bottom: 2.7em;
 }
+
+
 
 /* about page end */
 
@@ -450,21 +448,21 @@ iframe {
 
 /* hours page start */
 
-.hours-section {
+.hours-section .container {
   display: flex;
   color: white;
-  margin: 2.7rem 0rem 2.7rem 0rem;
+  padding: 2.7rem 5rem 2.7rem 5rem;
   list-style: none;
   justify-content: center;
 }
 
 .hours-section h1 {
   margin-bottom: .5rem;
+  text-align: center;
 }
 .hours-line {
   display: flex;
   justify-content: space-between;
- 
 }
 
 
@@ -518,11 +516,6 @@ iframe {
 @media screen and (min-width: 962px) {
   body {
     background-color: white;
-    
-  }
-
-  .navbar__container {
-    overflow-x: hidden;
   }
 
   .hero {
