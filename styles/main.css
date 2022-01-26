@@ -299,7 +299,7 @@ ul {
 
 .cta-section {
   text-align: center;
-  margin-top: 2.7rem;
+  margin-top: 5.2rem;
 }
 
 .direction-cta {
@@ -347,8 +347,8 @@ ul {
   background-position: cover;
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 2.7em 0em 0em 0em;
-  padding: 2.3em;
+  margin: 4.9em 0em 0em 0em;
+  padding: 2.3em 1.9em 2.3em 1.9em;
   align-items: center;
   justify-content: center;
       
@@ -356,7 +356,7 @@ ul {
 
 .features-section li {
   color: white;
-  font-size: 1.1em;
+  font-size: 1.05em;
   margin-bottom: .2em;
   text-align: left;
   filter: none;
@@ -379,31 +379,6 @@ iframe {
   background-color: var(--primary-color);
 }
 
-
-/* about page start */
-
-.about {
-  font-size: 1.7em;
-  color: white;
-  opacity: 1;
-  font-family: 'Lobster', cursive;
-  padding: 0em 1.5em 1.5em 1.5em;
-  text-align: center;
-}
-
-.about p{
-  padding: .3em .3em 0em .3em;
-  font-size: .75em;
-  font-family: 'Poppins', sans-serif;
-  margin-top: .5rem;
-  padding-bottom: 0em;
-  margin-bottom: 2.7em;
-}
-
-
-
-/* about page end */
-
 /* services page start */
 
 .services {
@@ -412,7 +387,7 @@ iframe {
   font-size: 1.2em;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-  margin: 2.7em 0em 2.7em 0em;
+  margin: 5em 0em 5em 0em;
 }
 
 .services h1 {
@@ -446,7 +421,34 @@ iframe {
 
 /* services page end */
 
+/* about page start */
+
+.about {
+  font-size: 1.7em;
+  color: white;
+  opacity: 1;
+  font-family: 'Lobster', cursive;
+  padding: 0em 1.5em 1.5em 1.5em;
+  text-align: center;
+}
+
+.about p{
+  padding: .3em .3em 0em .3em;
+  font-size: .75em;
+  font-family: 'Poppins', sans-serif;
+  margin-top: .5rem;
+  padding-bottom: 0em;
+  margin-bottom: 5em;
+}
+
+/* about page end */
+
+
 /* hours page start */
+
+.hours-section {
+  margin-top: 0em;
+}
 
 .hours-section .container {
   display: flex;
@@ -457,6 +459,7 @@ iframe {
 }
 
 .hours-section h1 {
+  font-size: 1.1em;
   margin-bottom: .5rem;
   text-align: center;
 }
@@ -467,18 +470,6 @@ iframe {
 
 
 /* hours page end  */
-
-@media (hover: hover) and (pointer: fine) {
-  button:hover {
-    color: palegreen;
-  }
-}
-
-
-
-
-
-/* Desktop responsive begin */
 
 .desk-gallery {
   display: none;
@@ -496,7 +487,21 @@ iframe {
   display: none;
 }
 
-@media screen and (min-width: 992px) {
+@media (hover: hover) and (pointer: fine) {
+  button:hover {
+    color: palegreen;
+  }
+}
+
+
+
+/* tablet responsive begin */
+
+@media screen and (min-width: 800px) {
+  * {
+    user-select: none;
+  }
+
   #navbar__logotext {
     display: flex;
   }
@@ -509,9 +514,159 @@ iframe {
     display: flex;
   }
 
+  .hero {
+    display: none;
+  }
+
+  
+
+  #desk-hero {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    font-size: 2.8em;
+    padding: 0;
+    text-align: left;
+    overflow-x: visible;
+  }
+
+  #desk-hero h1 {
+    display: flex;
+    overflow-x: visible;
+  }
+
+  #desk-hero h2 {
+    display: flex;
+    line-height: 20%;
+    margin-bottom: 1rem;
+    overflow-x: visible;
+  }
+
+  .cta-section {
+    padding: 0;
+    margin: 4rem 0em 5rem 7em;
+  }
+
+  .cta-buttons { 
+   padding: 2em 0em 0em .1em;
+   text-align: left;
+  }
+
+  .direction-cta {
+    outline: none;
+    margin-bottom: 0em;
+    font-size: 1em;
+    padding: .45em 1.9em;
+    color: white;
+    background: var(--wood);
+    border-color: white;
+    box-shadow: none;
+  }
+
+  .appointment-cta {
+    outline: none;
+    font-size: 1em;
+    padding: .45em 1.7em;
+    color: white;
+    background: rgb(44, 44, 224);
+    box-shadow: none;
+  
+    border-color: white;
+    
+  }
+
+  .desk-gallery {
+    background-color: var(--primary-color);
+    padding: 0;
+    display: flex;
+    flex-direction: left;
+    justify-content: space-between;
+  }
+
+  #image-one {
+    display: none;
+  }
+  
+  #image-two {
+    width: 60%;
+    height: 100%;
+    border-radius: 4px;
+    position: relative;
+    left: 27.5em;
+    bottom: 1.5em;
+    z-index: 4;
+  }
+
+  #image-three {
+    width: 90%;
+    height: 100%;
+    border-radius: 4px;
+    position: relative;
+    right: 12.5em;
+    z-index: 2;
+    bottom: 2.5em;
+  }
+
+  #image-four {
+    width: 50%;
+    height: 100%;
+    border-radius: 4px;
+    z-index: 3;
+    position: relative;
+    right: 2.5em;
+  }
+
+  .hours-section {
+    position: relative;
+    bottom: 19em;
+    left: 14em;
+    
+  }
+
+  .hours-section .container {
+    display: flex;
+    color: white;
+    border: solid;
+    border-color: white;
+    margin: 0em 16em 0em 14em;
+    padding: 5em 2em 5em 2em;
+    list-style: none;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+.features-section {
+  margin: 5em 0em 5em 0em;
+  padding: 5em;
+  font-size: 1.5em;
+}
+
+.services {
+  margin: 5em;
+}
+
+.about {
+  margin: 3em;
+}
+
+.map-section {
+  width: 50%;
+}
+
+.map-section iframe {
+  border-radius: 4px;
+}
+
 }
 
 
+/* tablet responsive end */
+
+
+
+
+/* Desktop responsive begin */
 
 @media screen and (min-width: 962px) {
   body {
@@ -524,6 +679,7 @@ iframe {
 
   #desk-hero {
     display: flex;
+    color: black;
     flex-direction: column;
     font-size: 2.8em;
     padding: 0;
@@ -600,7 +756,7 @@ iframe {
   }
 
 
-  #image-one {
+    #image-one {
     width: 18%;
     height: 100%;
     border-radius: 4px;
@@ -671,7 +827,5 @@ iframe {
   }
 
 }
-
-
 
 /* desktop responsive end */
