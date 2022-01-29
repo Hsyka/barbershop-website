@@ -494,14 +494,9 @@ iframe {
   }
 }
 
-
-
 /* tablet responsive begin */
 
 @media screen and (min-width: 800px) {
-  * {
-    user-select: none;
-  }
 
   #navbar__logotext {
     display: flex;
@@ -750,6 +745,7 @@ iframe {
 
   .desk-gallery {
     padding: 0;
+    background-color: white;
     display: flex;
     flex-direction: left;
     justify-content: space-between;
