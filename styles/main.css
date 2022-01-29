@@ -260,6 +260,7 @@ ul {
   background-repeat: no-repeat;
   filter: brightness(100%);
   height: 48vh;
+  min-height: 15%;
 }
 
 
@@ -757,24 +758,32 @@ iframe {
 
 
     #image-one {
+    display: flex;
+    position: static;
     width: 18%;
     height: 100%;
     border-radius: 4px;
     margin: 3em 1em 0em 0em;
   }
+
   #image-two {
+    position: static;
     width: 28%;
     height: 100%;
     border-radius: 4px;
     margin: 0em 0em 0em 0em;
   }
+
   #image-three {
+    position: static;
     width: 19%;
     height: 100%;
     border-radius: 4px;
     margin: 9em 1em 0em 1em;
   }
+
   #image-four {
+    position: static;
     width: 25%;
     height: 100%;
     border-radius: 4px;
