@@ -12,7 +12,7 @@
   font-family: 'Poppins', sans-serif;
   background-color: var(--primary-color);
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden; 
 }
 
 * {
@@ -260,7 +260,6 @@ ul {
   background-repeat: no-repeat;
   filter: brightness(100%);
   height: 48vh;
-  min-height: 15%;
 }
 
 
@@ -348,7 +347,7 @@ ul {
   background-position: cover;
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 4.9em 0em 0em 0em;
+  margin: 4.9em 0em 4.9em 0em;
   padding: 2.3em 1.9em 2.3em 1.9em;
   align-items: center;
   justify-content: center;
@@ -370,7 +369,6 @@ ul {
   margin: 0;
 }
 
-
 iframe {
   top: 0;
   left: 0;
@@ -379,6 +377,56 @@ iframe {
   border: 0;
   background-color: var(--primary-color);
 }
+
+/* grid-gallery start */
+
+.grid-gallery {
+  display: grid;
+  gap: 1rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #fff;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 1px;
+  transition: all 500ms;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-3px) scale(1.1);
+}
+
+@media screen and (min-wdith: 600px) {
+
+.card-tall {
+  grid-row: span 2 / auto;
+}
+
+.card-wide {
+  grid-column: span 2 / auto;
+}
+
+}
+
+
+
+/* grid-gallery end */
 
 /* services page start */
 
@@ -497,7 +545,6 @@ iframe {
 /* tablet responsive begin */
 
 @media screen and (min-width: 800px) {
-
   #navbar__logotext {
     display: flex;
   }
@@ -513,147 +560,6 @@ iframe {
   .hero {
     display: none;
   }
-
-  
-
-  #desk-hero {
-    display: flex;
-    color: white;
-    flex-direction: column;
-    font-size: 2.8em;
-    padding: 0;
-    text-align: left;
-    overflow-x: visible;
-  }
-
-  #desk-hero h1 {
-    display: flex;
-    overflow-x: visible;
-  }
-
-  #desk-hero h2 {
-    display: flex;
-    line-height: 20%;
-    margin-bottom: 1rem;
-    overflow-x: visible;
-  }
-
-  .cta-section {
-    padding: 0;
-    margin: 4rem 0em 5rem 7em;
-  }
-
-  .cta-buttons { 
-   padding: 2em 0em 0em .1em;
-   text-align: left;
-  }
-
-  .direction-cta {
-    outline: none;
-    margin-bottom: 0em;
-    font-size: 1em;
-    padding: .45em 1.9em;
-    color: white;
-    background: var(--wood);
-    border-color: white;
-    box-shadow: none;
-  }
-
-  .appointment-cta {
-    outline: none;
-    font-size: 1em;
-    padding: .45em 1.7em;
-    color: white;
-    background: rgb(44, 44, 224);
-    box-shadow: none;
-  
-    border-color: white;
-    
-  }
-
-  .desk-gallery {
-    background-color: var(--primary-color);
-    padding: 0;
-    display: flex;
-    flex-direction: left;
-    justify-content: space-between;
-  }
-
-  #image-one {
-    display: none;
-  }
-  
-  #image-two {
-    width: 60%;
-    height: 100%;
-    border-radius: 4px;
-    position: relative;
-    left: 27.5em;
-    bottom: 1.5em;
-    z-index: 4;
-  }
-
-  #image-three {
-    width: 90%;
-    height: 100%;
-    border-radius: 4px;
-    position: relative;
-    right: 12.5em;
-    z-index: 2;
-    bottom: 2.5em;
-  }
-
-  #image-four {
-    width: 50%;
-    height: 100%;
-    border-radius: 4px;
-    z-index: 3;
-    position: relative;
-    right: 2.5em;
-  }
-
-  .hours-section {
-    position: relative;
-    bottom: 19em;
-    left: 14em;
-    
-  }
-
-  .hours-section .container {
-    display: flex;
-    color: white;
-    border: solid;
-    border-color: white;
-    margin: 0em 16em 0em 14em;
-    padding: 5em 2em 5em 2em;
-    list-style: none;
-    justify-content: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
-.features-section {
-  margin: 5em 0em 5em 0em;
-  padding: 5em;
-  font-size: 1.5em;
-}
-
-.services {
-  margin: 5em;
-}
-
-.about {
-  margin: 3em;
-}
-
-.map-section {
-  width: 50%;
-}
-
-.map-section iframe {
-  border-radius: 4px;
-}
-
 }
 
 
