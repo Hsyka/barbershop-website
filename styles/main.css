@@ -492,6 +492,15 @@ iframe {
 
 /* about page end */
 
+.comic {
+  display: flex;
+  justify-content: center;
+}
+
+.comic img {
+  width: 350px;
+}
+
 
 /* hours page start */
 
