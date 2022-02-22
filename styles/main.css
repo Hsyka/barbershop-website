@@ -49,7 +49,6 @@ body {
 
 
 /* Navbar BEGIN */
-
 .navbar {
   background-color: var(--primary-color);
   height: 80px;
@@ -146,8 +145,6 @@ body {
   transition: all 0.3s ease;
 }
 
-
-
 @media screen and (max-width: 960px) {
   .navbar__container {
     display: flex;
@@ -157,7 +154,6 @@ body {
     width: 100%;
     max-width: 1300px;
     padding: .1em 0em .1em 0em;
-   
   }
 
   .navbar__menu {
@@ -243,7 +239,6 @@ body {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
 /* Navbar stuff END */
 
 ul {
@@ -251,7 +246,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-
 
 .hero {
   text-align: center;
@@ -261,9 +255,6 @@ ul {
   filter: brightness(100%);
   height: 48vh;
 }
-
-
-
 
 .hero h1 {
   font-size: 2.8em;
@@ -275,8 +266,7 @@ ul {
   padding-top: 2.1em;
   animation: fadeInAnimationHero ease 3.5s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  
+  animation-fill-mode: forwards; 
 }
 
 @keyframes fadeInAnimationHero {
@@ -296,7 +286,6 @@ ul {
 }
 
 /* CTA section START */
-
 .cta-section {
   text-align: center;
   margin-top: 5.2rem;
@@ -318,10 +307,6 @@ ul {
   margin-bottom: 1.5em;
 }
 
-.direction-cta:hover {
- 
-}
-
 .appointment-cta {
   font-size: 1.3em;
   background: linear-gradient(to right, var(--wood), #2c1818, #301818);
@@ -337,11 +322,7 @@ ul {
   outline: 4px solid var(--wood);
 }
 
-.appointment-cta:hover {
-
-}
 /* CTA section END */
-
 .features-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../images/clippers.jpg");
   background-position: cover;
@@ -350,8 +331,7 @@ ul {
   margin: 4.9em 0em 4.9em 0em;
   padding: 2.3em 1.9em 2.3em 1.9em;
   align-items: center;
-  justify-content: center;
-      
+  justify-content: center;   
 }
 
 .features-section li {
@@ -379,7 +359,6 @@ iframe {
 }
 
 /* grid-gallery start */
-
 .grid-gallery {
   display: grid;
   gap: 1rem;
@@ -421,15 +400,10 @@ iframe {
 .card-wide {
   grid-column: span 2 / auto;
 }
-
 }
-
-
-
 /* grid-gallery end */
 
 /* services page start */
-
 .services {
   padding: 1.55em;
   color: white;
@@ -467,11 +441,9 @@ iframe {
   margin-left: 4px;
   margin-right: 4px;
 }
-
 /* services page end */
 
 /* about page start */
-
 .about {
   font-size: 1.7em;
   color: white;
@@ -489,7 +461,6 @@ iframe {
   padding-bottom: 0em;
   margin-bottom: 5em;
 }
-
 /* about page end */
 
 .comic {
@@ -503,7 +474,6 @@ iframe {
 
 
 /* hours page start */
-
 .hours-section {
   margin-top: 0em;
 }
@@ -525,8 +495,6 @@ iframe {
   display: flex;
   justify-content: space-between;
 }
-
-
 /* hours page end  */
 
 .desk-gallery {
@@ -570,15 +538,9 @@ iframe {
     display: none;
   }
 }
-
-
 /* tablet responsive end */
 
-
-
-
 /* Desktop responsive begin */
-
 @media screen and (min-width: 962px) {
   body {
     background-color: white;
@@ -747,5 +709,4 @@ iframe {
   }
 
 }
-
 /* desktop responsive end */
